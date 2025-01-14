@@ -1,0 +1,391 @@
+/* Mengatur gaya dasar untuk seluruh halaman */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("bgmiddle.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.signin-container {
+  text-align: center;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 50px;
+  color: white;
+}
+
+.h2-event {
+  text-align: center;
+  font-weight: bold;
+}
+
+.signup-form {
+  max-width: 500px;
+  background-color: white;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.signin-button {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007bff;
+  padding: 10px;
+  border-radius: 5px;
+  width: auto;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button.signin-button {
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+}
+
+.signin-button:hover {
+  background-color: #0056b3;
+}
+
+/* signup_buyer.php */
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #555;
+  text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.signup-button {
+  margin-top: 10px;
+  width: auto;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.signup-button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling umum untuk pesan */
+.message {
+  padding: 10px;
+  margin: 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Pesan error (gagal login) */
+.message.error {
+  color: #a94442;
+  background-color: #f2dede;
+  border: 1px solid #ebccd1;
+}
+
+/* Pesan sukses (logout berhasil) */
+.message.success {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border: 1px solid #d6e9c6;
+}
+
+/* Pesan info (harus login) */
+.message.info {
+  color: #31708f;
+  background-color: #d9edf7;
+  border: 1px solid #bce8f1;
+}
+
+/* Dashboard form */
+.dashboard-form {
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.small-qr {
+  width: 80px; 
+}
+
+.card-img-top {
+  width: auto;
+}
+
+.custom-tab {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  flex-wrap: nowrap;
+}
+
+.custom-tab > .nav-item {
+  flex-grow: 1;
+  text-align: center;
+  flex-basis: 100%;
+  padding: 8px 16px;
+}
+
+.custom-tab .nav-link {
+  color: black;
+  transition-property: color;
+  transition-duration: 0.3s;
+}
+
+.custom-tab .nav-link.active {
+  color: #a22cf1;
+}
+
+.custom-tab .indicator {
+  position: absolute;
+  width: calc(100% / 3);
+  height: 2px;
+  left: 0;
+  top: 100%;
+  background-color: #a22cf1;
+  transition-property: left;
+  transition-duration: 0.3s;
+}
+
+.custom-tab:has(.active[data-bs-target="#details"]) .indicator {
+  left: calc(100% / 3);
+}
+
+.custom-tab:has(.active[data-bs-target="#organizer"]) .indicator {
+  left: calc(2 * 100% / 3);
+}
+
+.custom-tab .nav-link {
+  padding: 0;
+  border-width: 0;
+  display: inline;
+}
+
+.event-date {
+  background-color: #7b3f91;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.ticket-card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.ticket-card:hover {
+  transform: translateY(-5px);
+}
+
+.ticket-card h6 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.ticket-card p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.3rem;
+}
+
+.ticket-card select.form-select {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.buy-btn {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #7b3f91;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buy-btn:hover {
+  background-color: #68297a;
+}
+
+.harits-navbar-blur {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+.footer {
+  background-color: #fff;
+  color: #444;
+  padding: auto;
+  padding-top: 15px;
+  font-family: Arial, sans-serif;
+}
+.footer-content,
+.footer-links,
+.footer-hours {
+  width: 30%;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 1%;
+}
+.footer-content h5,
+.footer-links h5,
+.footer-hours h5 {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.footer-links ul {
+  list-style-type: none;
+  padding: 0;
+}
+.footer-links ul li {
+  margin-bottom: 8px;
+}
+.footer-hours p {
+  margin: 5px 0;
+}
+.footer-bottom {
+  text-align: center;
+  padding: 10px;
+  background-color: #fff;
+  color: #333;
+  margin-top: 20px;
+}
+
+.form-dashboard {
+  margin-bottom: 15px;
+  padding: 1rem;
+  padding-bottom: 20px;
+  border-radius: 5px;
+}
+
+/* Styling untuk tab "details" */
+#details {
+  background-color: #f9f9f9; 
+  border: 1px solid #ddd; 
+  padding: 20px; 
+  border-radius: 8px; 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+#details h5 {
+  color: #333; 
+  font-size: 1.2em; 
+  margin-top: 20px; 
+  display: flex;
+  align-items: center;
+}
+
+#details h5 i {
+  color: #007bff; 
+  margin-right: 8px; 
+}
+
+#details p {
+  color: #555; 
+  font-size: 0.95em; 
+  line-height: 1.6; 
+  margin-bottom: 15px; 
+}
+
+#details strong {
+  color: #d9534f; 
+}
+
+#details ul {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+#details ul li {
+  color: #444; 
+  margin-bottom: 8px; 
+}
+
+/* Teks pada item dengan nomor */
+#details p strong {
+  color: #d9534f; 
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #details {
+    padding: 15px;
+  }
+
+  #details h5 {
+    font-size: 1em;
+  }
+
+  #details p {
+    font-size: 0.9em;
+  }
+}
